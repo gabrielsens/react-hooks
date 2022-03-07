@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
+import Counter from './Components/Counter';
+
 import './App.css';
 
 function App() {
+  useState(() => {
+    return 'Estado inicial sem precisar fazer um setState'
+  });
+
+  // Pode passar um objeto como state tbm;
+  const [email] = useState('gabreile@gabriel.com');
+  const [name] = useState('Gabriel');
+  // Toda vez que altera o state ele vai renderizar todo o componente
+  console.log(email, name)
+
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter />
     </div>
   );
 }
