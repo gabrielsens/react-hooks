@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import Counter from './Components/Counter';
+import UseEffect from './Components/Counter/UseEffect';
 
 import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <Counter />
+      <UseEffect />
     </div>
   );
 }
