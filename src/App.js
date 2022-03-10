@@ -1,8 +1,13 @@
 import { useState } from 'react';
 
 import Counter from './Components/Counter';
+import Context from './Components/Context';
+import Callback from './Components/Callback';
+import Memo from './Components/Memo';
+import Ref from './Components/Ref';
 
 import './App.css';
+import Reducer from './Components/Reducer';
 
 function App() {
   useState(() => {
@@ -18,8 +23,13 @@ function App() {
   
 
   return (
-    <div className="App">
+    <div className="App" style={{paddingBottom: "20px"}}>
       <Counter />
+      <Context />
+      <Reducer />
+      <Callback />
+      <Memo />
+      <Ref />
     </div>
   );
 }

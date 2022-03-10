@@ -18,6 +18,7 @@ export default function Counter() {
 
     return (
         <div>
+          <h4>useState</h4>
           <h1>{counter}</h1>
           <button onClick={handlePlus}>+</button>
           <button onClick={handleMinus}>-</button>
