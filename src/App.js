@@ -5,6 +5,7 @@ import Context from './Components/Context';
 import Callback from './Components/Callback';
 import Memo from './Components/Memo';
 import Ref from './Components/Ref';
+import UseEffect from './Components/Counter/UseEffect';
 
 import './App.css';
 import Reducer from './Components/Reducer';
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App" style={{paddingBottom: "20px"}}>
       <Counter />
+      <UseEffect />
       <Context />
       <Reducer />
       <Callback />
